@@ -1,8 +1,9 @@
 import http from 'http'
 
 const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    res.write('<h1>Hola Mundo</h1>')
+    const data = { name: 'John Doe', age: 39, city: 'New York' }
+    res.writeHead(200, { 'Content-Type': 'application/json' })
+    res.write(JSON.stringify(data))
     res.end()
 })
 
