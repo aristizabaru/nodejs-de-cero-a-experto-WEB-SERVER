@@ -1,5 +1,11 @@
-interface hola {
-    nombre: String
-}
+import http from 'http'
 
-console.log('Hola Mundo')
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html' })
+    res.write('<h1>Hola Mundo</h1>')
+    res.end()
+})
+
+server.listen(8080, () => {
+    console.log('Server running on port 8080')
+})
