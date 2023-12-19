@@ -1,4 +1,4 @@
-# NodeJS: De cero a experto (REST WEB)
+# NodeJS: De cero a experto (WEB SERVER)
 
 ## Acerca de
 
