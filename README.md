@@ -33,7 +33,7 @@ PORT=3000
 PUBLIC_PATH=public
 ```
 
-2. Correr el proyecto usando alguno de los siguientes scripts según el entorno
+3. Correr el proyecto usando alguno de los siguientes scripts según el entorno
 
 Ejecutar entorno de desarrollo
 
