@@ -1,0 +1,12 @@
+body {
+  background-color: aliceblue;
+  font-family: sans-serif;
+}
+p {
+  color: gray;
+}
+.wrapper {
+  max-width: 1240px;
+  padding: 0 4rem;
+  margin-inline: auto;
+}
