@@ -20,3 +20,6 @@ postgres-test/
 # test
 .env.test
 coverage/
+
+# self certificate
+key/

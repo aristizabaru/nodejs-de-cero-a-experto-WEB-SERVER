@@ -1,10 +1,7 @@
-import http2 from 'http2'
+import http from 'http'
 import fs from 'fs'
 
-const server = http2.createSecureServer({
-    key: fs.readFileSync('./key/server.key'),
-    cert: fs.readFileSync('./key/server.crt')
-}, (req, res) => {
+const server = http.createServer((req, res) => {
 
     console.log(req.url)
 
