@@ -1,10 +1,16 @@
 import http from 'http'
+import fs from 'fs'
 
 const server = http.createServer((req, res) => {
-    const data = { name: 'John Doe', age: 39, city: 'New York' }
-    res.writeHead(200, { 'Content-Type': 'application/json' })
-    res.write(JSON.stringify(data))
-    res.end()
+
+    if (req.url === '/') {
+        const htmlData = fs.readFileSync('./public/index.html', 'utf-8')
+        res.writeHead(200, { 'Content-Type': 'text/html' })
+        res.end(htmlData)
+    } else {
+        res.writeHead(404, { 'Content-Type': 'text/html' })
+        res.end()
+    }
 })
 
 server.listen(8080, () => {
